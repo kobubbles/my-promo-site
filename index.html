@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainRun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button id="discord-btn" onclick="scrollTo('discord')">Discord</button>
+        <button id="roblox-btn" onclick="scrollTo('roblox')">Roblox</button>
+        <button id="spotify-btn" onclick="scrollTo('spotify')">Spotify</button>
+        <button id="instagram-btn" onclick="scrollTo('instagram')">Instagram</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to MainRun!</h1>
+        <p>Join our community and stay updated on the latest news!</p>
+    </section>
+
+    <!-- Join My Discord -->
+    <section id="discord" class="card">
+        <h2>Join My Discord</h2>
+        <a href="https://discord.gg/mainrun" target="_blank" rel="noopener noreferrer">
+            <button Invite to Discord
+                onclick="window.open('https://discord.gg/mainrun', '_blank'); return false;">
+                Join Now!
+            </button>
+        </a>
+    </section>
+
+    <!-- Play My Roblox Game -->
+    <section id="roblox" class="card">
+        <h2>Play My Roblox Game</h2>
+        <iframe src="https://www.roblox.com/games/81390919300735/Steal-OG-ROBLOX/embed?devHost=0" 
+                width="100%" height="500" frameborder="0" allowfullscreen="true">
+            Your browser does not support the embed tag.
+        </iframe>
+    </section>
+
+    <!-- Listen on Spotify -->
+    <section id="spotify" class="card">
+        <h2>Listen on Spotify</h2>
+        <div id="spotify-preview"></div>
+        <button id="refresh-spotify-btn">Refresh Preview</button>
+        <script src="https://open.spotify.com/embed/widget.js?version=1&uri=https%3A%2F%2Fopen.spotify.com%2Fartist%2F2HMjLscJm49x6Yj7XIiEdO" 
+                async defer></script>
+    </section>
+
+    <!-- Follow Me on Instagram -->
+    <section id="instagram" class="card">
+        <h2>Follow Me on Instagram</h2>
+        <a href="https://www.instagram.com/getingsss?igsh=aHk2N2FwOXJyNWg3&utm_source=qr" target="_blank" rel="noopener noreferrer">
+            <button Follow Now!
+                onclick="window.open('https://www.instagram.com/getingsss?igsh=aHk2N2FwOXJyNWg3&utm_source=qr', '_blank'); return false;">
+                Follow Now!
+            </button>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; MainRun. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
